@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "291716_github_logo_social network_social_icon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -11,7 +12,6 @@
           "value" : "light"
         }
       ],
-      "filename" : "github-mark.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -22,7 +22,6 @@
           "value" : "dark"
         }
       ],
-      "filename" : "github-mark-white.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },

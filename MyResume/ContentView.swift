@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var selectedSkill: (name: String, explanation: String)?
 
     var body: some View {
+        
         ScrollView {
             VStack(spacing: 30) {
                 HStack(spacing: 25) {
@@ -34,9 +35,14 @@ struct ContentView: View {
                         ).foregroundColor(.secondary)
                     }
                 }
-                Text(me.bio)
-                    .font(.title3)
-                    .lineSpacing(10.0)
+                
+                
+                        Text(me.bio)
+                            .font(.callout)
+                            .lineSpacing(10.0)
+                            .fixedSize(horizontal: false, vertical: true)
+                    
+                
                 
                 Button{ isShowingContact = true } label: {
                     Text("連絡先")
@@ -64,7 +70,7 @@ struct ContentView: View {
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 50)
                                 Text(skill.name)
-                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(Color.accentColor)
                             }
                         }.frame(width: 80)
                     }

@@ -19,7 +19,7 @@ struct Resume {
     let name = "リ　ユイ"
     let title = "iOSエンジニア"
     let location = "位置：台湾"
-    let bio = "こんにちは、私はリユイと申します。現在は、アプリアエンジニアとしての転職を目指しており、アプリ開発に関するスキルを磨いています。"
+    let bio = "こんにちは、私はリユイと申します。\n現在は、アプリアエンジニアとしての転職を目指しており、アプリ開発に関するスキルを磨いています。"
 
     // 技能列表
     let skills: [(name: String, explanation: String)] = [

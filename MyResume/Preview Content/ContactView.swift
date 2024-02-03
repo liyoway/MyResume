@@ -23,6 +23,16 @@ struct ContactView: View {
                     .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.brown))
                     .onTapGesture { openUrl(Resume.shared.phoneUrl) }
                 
+                // GitHub圖標
+                Image("Github")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.white)
+                    .padding(10)
+                    .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.gray))
+                    .onTapGesture { openUrl(Resume.shared.Github) }
+
+                
                 // LinkedIn圖標
                 Image("LinkedIn")
                     .resizable()
@@ -34,22 +44,13 @@ struct ContactView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .onTapGesture { openUrl(Resume.shared.socialMedia[1].url) }
-                
-                // GitHub圖標
-                Image("Github")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .foregroundColor(.white)
-                    .padding(10)
-                    .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.gray))
-                    .onTapGesture { openUrl(Resume.shared.Github) }
             }
 
             // 取消按鈕
             Button {
                 isShowing = false
             } label: {
-                Text("取消")
+                Text("キャンセル")
                     .font(.title3)
                     .foregroundStyle(.gray)
             }
